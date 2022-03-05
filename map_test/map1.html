@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_018d9e93ff274dce85c0913e7e5b099d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_018d9e93ff274dce85c0913e7e5b099d" ></div>
+        
+</body>
+<script>    
+    
+            var map_018d9e93ff274dce85c0913e7e5b099d = L.map(
+                "map_018d9e93ff274dce85c0913e7e5b099d",
+                {
+                    center: [37.5738858, 126.9748345],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15.5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0dc66e3422f74acea7cda38d05ca368d = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_018d9e93ff274dce85c0913e7e5b099d);
+        
+    
+            var marker_043876acf63d46c49ca058d2a90fde0e = L.marker(
+                [37.564159849999996, 126.97380781037548],
+                {}
+            ).addTo(map_018d9e93ff274dce85c0913e7e5b099d);
+        
+    
+            var icon_02745cbd8f4843b4bb70aca9df7dab96 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_043876acf63d46c49ca058d2a90fde0e.setIcon(icon_02745cbd8f4843b4bb70aca9df7dab96);
+        
+    
+        var popup_3fecdc89de424a7b974f75cb2c4b6931 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_91322ab359f0425f93d6c258ce425fdb = $(`<div id="html_91322ab359f0425f93d6c258ce425fdb" style="width: 100.0%; height: 100.0%;">서울시립미술관</div>`)[0];
+            popup_3fecdc89de424a7b974f75cb2c4b6931.setContent(html_91322ab359f0425f93d6c258ce425fdb);
+        
+
+        marker_043876acf63d46c49ca058d2a90fde0e.bindPopup(popup_3fecdc89de424a7b974f75cb2c4b6931)
+        ;
+
+        
+    
+</script>
